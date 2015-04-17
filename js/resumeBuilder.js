@@ -59,8 +59,7 @@ var education ={
     var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
     var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
     var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-    $("#education").append(formattedSchoolName);
-    $("#education").append(formattedSchoolDegree);
+    $("#education").append(formattedSchoolName+formattedSchoolDegree);
     $("#education").append(formattedSchoolDates);
     $("#education").append(formattedSchoolLocation);
     for (major in education.schools[school].majors){
@@ -136,3 +135,5 @@ bio.display();
 work.display();
 projects.display();
 education.display();
+
+$("#mapDiv").append(googleMap);
