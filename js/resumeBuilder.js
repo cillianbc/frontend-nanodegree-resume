@@ -1,8 +1,8 @@
-var bio ={
+var bio = {
   "name": "Cillian",
   "skills": [ "CSS","HTML","SEO" ],
   "role":"Web Developer",
-  "bioPic":"images/cillianbc-Logo.jpg",
+  "bioPic":"images/cillianbc-Logo.png",
   "contacts":{
     "email":"cillianbc@gmail.com",
     "github":"https://github.com/cillianbc",
@@ -12,32 +12,32 @@ var bio ={
   },
   "welcomMessage":"Webby Wonder",
   "display":function(){
-  var formattedName = HTMLheaderName.replace("%data%",bio.name);
-  var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
-  var formattedBioPic = HTMLbioPic.replace("%data%",bio.bioPic);
-  var formattedTwitter = HTMLtwitter.replace("%data%",bio.contacts["twitter"]);
-  var formattedEmail = HTMLemail.replace("%data%",bio.contacts["email"]);
-  var formattedLocation = HTMLlocation.replace("%data%",bio.contacts["location"]);
-  var formattedMobile = HTMLmobile.replace("%data%",bio.contacts["mobile"]);
-  var formattedGithub = HTMLgithub.replace("%data%",bio.contacts["github"]);
-  var formattedWelcome = HTMLWelcomeMsg.replace("%data%",bio.welcomMessage);
+    var formattedName = HTMLheaderName.replace("%data%",bio.name);
+    var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
+    var formattedBioPic = HTMLbioPic.replace("%data%",bio.bioPic);
+    var formattedTwitter = HTMLtwitter.replace("%data%",bio.contacts["twitter"]);
+    var formattedEmail = HTMLemail.replace("%data%",bio.contacts["email"]);
+    var formattedLocation = HTMLlocation.replace("%data%",bio.contacts["location"]);
+    var formattedMobile = HTMLmobile.replace("%data%",bio.contacts["mobile"]);
+    var formattedGithub = HTMLgithub.replace("%data%",bio.contacts["github"]);
+    var formattedWelcome = HTMLWelcomeMsg.replace("%data%",bio.welcomMessage);
 
-  $("#header").prepend(formattedRole);
-  $("#header").prepend(formattedName);
-  $("#topContacts").append(formattedMobile,formattedEmail,formattedGithub,formattedTwitter,formattedLocation);
-  $("#footerContacts").append(formattedMobile,formattedEmail,formattedGithub,formattedTwitter,formattedLocation);
-  $("#header").append(formattedBioPic);
-  $("#header").append(formattedWelcome);
-  $("#header").append(HTMLskillsStart);
-  for (skill in bio.skills){
-    var formattedSkills = HTMLskills.replace("%data%",bio.skills[skill]);
-    $("#header").append(formattedSkills);
-  }
+    $("#header").prepend(formattedRole);
+    $("#header").prepend(formattedName);
+    $("#topContacts").append(formattedMobile,formattedEmail,formattedGithub,formattedTwitter,formattedLocation);
+    $("#footerContacts").append(formattedMobile,formattedEmail,formattedGithub,formattedTwitter,formattedLocation);
+    $("#header").append(formattedBioPic);
+    $("#header").append(formattedWelcome);
+    $("#header").append(HTMLskillsStart);
+    for (skill in bio.skills){
+      var formattedSkills = HTMLskills.replace("%data%",bio.skills[skill]);
+      $("#header").append(formattedSkills);
+    }
   }
 }
 
 
-var education ={
+var education = {
   "schools": [{
     "name":"Carlow IT",
     "location":"Carlow",
@@ -87,7 +87,7 @@ var education ={
   }
 
 
-var work ={
+var work = {
   "jobs": [{
     "employer":"Cillianbc.com",
     "title":"King",
@@ -111,12 +111,12 @@ var work ={
   }
 }
 
-var projects ={
+var projects = {
   "API": [{
     "title":"API App",
     "dates":2015,
     "description":"Page speed Insights API used to grade webpages",
-    "images":["images/api-pc.jpg","images/API_HACk.png"]
+    "images":["images/api-pc.png","images/API_HACk.png"]
   }],
   "display":function(){
   $("#projects").append(HTMLprojectStart);

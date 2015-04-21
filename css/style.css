@@ -112,7 +112,6 @@ a {
 .gray {
   background-color: #F3F3F3;
   padding-bottom: 10px;
-  clear:both;
 }
 
 .dark-gray {
@@ -211,6 +210,7 @@ span {
   height: 400px;
   width: 100%;
   padding-bottom: 5%;
+  clear: both;
 }
 
 @media only screen and (min-width: 750px) {
@@ -219,4 +219,28 @@ span {
   .biopic {
     display: block;
   }
+}
+
+#projects{
+  width:40%;
+  float:left;
+}
+
+#education{
+  width:40%;
+  float:right;
+}
+
+#Cillian{
+  background-image: url("../images/restaurant.png");
+  background-size: cover;
+  height: 400px;
+  color:white;
+}
+.projectsImage{
+  max-width: 45%;
+}
+
+#Cillian h2{
+  color: white;
 }
